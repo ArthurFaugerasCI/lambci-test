@@ -24,13 +24,13 @@ module.exports = function(config) {
         // preprocess matching files before serving them to the browser
         // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
         preprocessors: {
-            'main/app/**/*.js': ['coverage', 'jshint']
+            'main/app/**/*.js': ['coverage']
         },
 
         // test results reporter to use
         // possible values: 'dots', 'progress'
         // available reporters: https://npmjs.org/browse/keyword/karma-reporter
-        reporters: ['teamcity', 'coverage'],
+        reporters: ['coverage'],
 
         // web server port
         port: 9876,
@@ -55,13 +55,8 @@ module.exports = function(config) {
 
         coverageReporter: {
             reporters:[
-                {type: 'html', dir:'coverage/'},
-                {type: 'teamcity'}
+                {type: 'html', dir:'coverage/'}
             ]
         },
-
-        jshintPreprocessor: {
-            jshintrc: 'main/app/.jshintrc'
-        }
     });
 };
