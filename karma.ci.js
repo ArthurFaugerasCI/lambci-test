@@ -30,7 +30,7 @@ module.exports = function(config) {
         // test results reporter to use
         // possible values: 'dots', 'progress'
         // available reporters: https://npmjs.org/browse/keyword/karma-reporter
-        reporters: ['coverage'],
+        reporters: ['progress', 'coverage'],
 
         // web server port
         port: 9876,
@@ -48,7 +48,7 @@ module.exports = function(config) {
         // start these browsers
         // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
         // or you can just use 'chrome'
-        browsers: ['Chrome', 'Firefox', 'Safari'],
+        browsers: ['PhantomJS'],
 
         // Continuous Integration mode
         singleRun: true,
