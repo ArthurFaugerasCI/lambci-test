@@ -3,13 +3,13 @@ function returnTrue() {
 }
 
 function returnFalse() {
-    return returnTrue() === false;
+    return returnTrue() == false;
 }
 
+/* eslint-disable */
 function notCovered() {
     console.log("this function is not covered");
 
     return returnFalse();
 }
 
-notCovered();
