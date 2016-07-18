@@ -8,7 +8,7 @@ describe("A suite", function() {
     it("test expected to pass", function() {
         expect(isToolAvailable()).toBe(true);
     });
-    // it("test expected to pass", function() {
-    //     expect(notCovered()).toBe(false);
-    // });
+    it("test expected to pass", function() {
+        expect(notCovered()).toBe(false);
+    });
 });
