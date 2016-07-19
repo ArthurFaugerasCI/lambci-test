@@ -6,9 +6,9 @@ describe("A suite", function() {
         expect(returnFalse()).toBe(false);
     });
     it("test expected to pass", function() {
-        expect(isToolAvailable()).toBe(true);
+        expect(isToolAvailable()).toBe(false);
     });
-    it("test expected to pass", function() {
-        expect(notCovered()).toBe(false);
-    });
+    // it("test expected to pass", function() {
+    //     expect(notCovered()).toBe(false);
+    // });
 });
