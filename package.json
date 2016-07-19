@@ -2,6 +2,7 @@
   "name": "lambci_test",
   "version": "0.0.1",
   "dependencies": {
+    "fsevents": "^1.0.14",
     "istanbul": "^0.4.4",
     "jasmine-core": "^2.4.1",
     "karma": "^1.1.1",
