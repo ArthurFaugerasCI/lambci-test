@@ -3,7 +3,7 @@ function returnTrue() {
 }
 
 function returnFalse() {
-    return returnTrue() == false;
+    return returnTrue() === false;
 }
 
 /* eslint-disable */
