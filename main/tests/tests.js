@@ -1,14 +1,14 @@
-describe("A suite", function() {
-    it("contains spec with an expectation of true", function() {
+describe("Test suite", function() {
+    it("This function must return true", function() {
         expect(returnTrue()).toBe(true);
     });
-    it("test expected to fail returnFalse returns true", function() {
+    it("This function must return false", function() {
         expect(returnFalse()).toBe(false);
     });
-    it("test expected to pass", function() {
-        expect(isToolAvailable()).toBe(true);
+    it("This tool must be available", function() {
+        expect(isToolAvailable()).toBe(false);
     });
-    it("test expected to pass", function() {
-        expect(notCovered()).toBe(false);
-    });
+    // it("This function must return false", function() {
+    //     expect(notCovered()).toBe(false);
+    // });
 });
