@@ -1,3 +1,4 @@
+/* eslint-disable */
 describe("A suite", function() {
     it("contains spec with an expectation of true", function() {
         expect(returnTrue()).toBe(true);
@@ -6,9 +7,9 @@ describe("A suite", function() {
         expect(returnFalse()).toBe(false);
     });
     it("test expected to pass", function() {
-        expect(isToolAvailable()).toBe(false);
+        expect(isToolAvailable()).toBe(true);
     });
-    // it("test expected to pass", function() {
-    //     expect(notCovered()).toBe(false);
-    // });
+    it("test expected to pass", function() {
+        expect(notCovered()).toBe(false);
+    });
 });
